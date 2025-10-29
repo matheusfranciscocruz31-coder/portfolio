@@ -1,0 +1,36 @@
+﻿credentials:
+  api_key: "4Yu9NYmTjBLJuXfR9Cd2AQyDxFmp3OmRwsrTrb1rHthsyXkZYSERZRn957Np0wNm"
+  api_secret: "dE1ieJHyHSCJOQUG2k9UDJtqA3T9avT3Ph8Ta9zcprjtnJb8GKji1vbFbYoCQFnM"
+
+general:
+  base_asset: "BTCUSDT"
+  receive_command: false
+  trading_mode: "live"  # live | paper
+  quote_balance: 100
+  fixed_cost: 1.0
+  leverage: 25
+  risk_per_trade_pct: 1.0
+  max_concurrent_positions: 1
+  time_frame: "15m"
+  data_lookback: 500
+
+filters:
+  min_volume_usdt: 5000000
+  max_spread_pct: 0.08
+
+risk_management:
+  atr_period: 14
+  atr_multiplier_sl: 2.5
+  atr_multiplier_tp: 4.0
+  trailing_stop: true
+  trailing_atr_multiplier: 1.5
+
+signal_weights:
+  trend_score_weight: 0.4
+  momentum_score_weight: 0.25
+  orderflow_score_weight: 0.2
+  liquidity_score_weight: 0.15
+
+notifications:
+  enabled: false
+  webhook_url: ""

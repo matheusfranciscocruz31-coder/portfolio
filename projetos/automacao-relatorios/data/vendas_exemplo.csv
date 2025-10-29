@@ -1,0 +1,11 @@
+data,cliente,produto,quantidade,valor
+2025-01-02,Oficina Rota 99,Pneu Aro 16,4,1299.60
+2025-01-03,LubExpress,Kit Troca Olio,12,1548.90
+2025-01-05,Frota Limeira,Filtro Diesel,18,972.40
+2025-01-08,Transvale,Kit Freio,6,2210.00
+2025-01-09,Oficina Rota 99,Kit Freio,3,1105.00
+2025-01-11,Rede TruckMax,Bateria 150Ah,2,1890.00
+2025-01-12,LubExpress,Oleo Sintetico 5W30,20,2100.00
+2025-01-13,Frota Limeira,Pneu Aro 16,8,2599.20
+2025-01-14,Transvale,Oleo Sintetico 5W30,15,1575.00
+2025-01-14,Rede TruckMax,Filtro Diesel,9,486.20

@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio • Matheus Francisco Cruz</title>
+  <meta name="description" content="Automação com Python + Excel para transformar processos em ganhos reais. Portfólio profissional com projetos, estudos de caso e demo interativa de automação."/>
+  <meta name="theme-color" content="#0EA5E9"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a class="brand" href="#home" aria-label="Ir para o topo">
+      <span class="logo">MF</span>
+      <span class="brand-text">Matheus Francisco Cruz</span>
+    </a>
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#automacao">Automações</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-ghost" href="#automacao">Ver Demo</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Automação que gera resultado</h1>
+      <p class="subtitle">Python + Excel para eliminar retrabalho, reduzir erros e acelerar decisões — do dia a dia ao estratégico.</p>
+      <div class="cta">
+        <a class="btn" href="#automacao"><i class="fa-solid fa-rocket"></i> Ver automação na prática</a>
+        <a class="btn btn-ghost" href="#projetos"><i class="fa-solid fa-briefcase"></i> Ver projetos</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="num" data-count="1200">0</span><span class="label">horas/ano poupadas</span></div>
+        <div class="stat"><span class="num" data-count="98">0</span><span class="label">redução de erros (%)</span></div>
+        <div class="stat"><span class="num" data-count="10">0</span><span class="label">processos automatizados</span></div>
+      </div>
+    </div>
+    <div class="parallax">
+      <span class="layer l1" data-speed="0.02"></span>
+      <span class="layer l2" data-speed="0.05"></span>
+      <span class="layer l3" data-speed="0.09"></span>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou gerente administrativo e gestor de frota com foco em eficiência operacional. Desenvolvo automações sob medida usando
+        <strong>Python</strong> e <strong>Excel avançado</strong> para transformar tarefas manuais em processos confiáveis, rápidos e auditáveis.
+      </p>
+      <div class="highlights">
+        <div class="chip"><i class="fa-solid fa-wand-magic-sparkles"></i> Robôs que executam tarefas repetitivas</div>
+        <div class="chip"><i class="fa-solid fa-table"></i> Tratamento inteligente de planilhas</div>
+        <div class="chip"><i class="fa-solid fa-chart-line"></i> Dashboards e indicadores acionáveis</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projetos -->
+  <section id="projetos" class="section alt">
+    <div class="container">
+      <div class="section-head">
+        <h2>Projetos em destaque</h2>
+        <div class="filters">
+          <button class="filter active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="python">Python</button>
+          <button class="filter" data-filter="excel">Excel</button>
+          <button class="filter" data-filter="dashboard">Dashboard</button>
+        </div>
+      </div>
+
+      <div class="grid projects-grid">
+        <article class="card project" data-tags="python excel automacao">
+          <div class="thumb thumb-1" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Automação de Relatórios</h3>
+            <p>Geração automática de relatórios com tratamento de dados, validações e envio por e-mail.</p>
+            <div class="meta">
+              <span class="tag">Python</span><span class="tag">Excel</span><span class="tag">Pandas</span>
+            </div>
+            <div class="actions">
+              <a href="#automacao" class="link">Ver demo</a>
+              <a href="projetos/automacao-relatorios/README.md" class="link" target="_blank" rel="noopener">Ver projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="excel dashboard">
+          <div class="thumb thumb-2" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>Dashboard Financeiro</h3>
+            <p>Indicadores diários com consolidação de múltiplas fontes e atualização automática.</p>
+            <div class="meta">
+              <span class="tag">Power Query</span><span class="tag">Excel</span>
+            </div>
+            <div class="actions">
+              <a href="projetos/dashboard-financeiro/README.md" class="link" target="_blank" rel="noopener">Ver projeto</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project" data-tags="python automacao">
+          <div class="thumb thumb-3" aria-hidden="true"></div>
+          <div class="card-body">
+            <h3>XML → Excel (NF-e)</h3>
+            <p>Conversor de XML de notas fiscais para planilhas organizadas e auditáveis.</p>
+            <div class="meta">
+              <span class="tag">Python</span><span class="tag">lxml</span>
+            </div>
+            <div class="actions">
+              <a href="projetos/xml-para-excel/README.md" class="link" target="_blank" rel="noopener">Ver projeto</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Automação na prática -->
+  <section id="automacao" class="section">
+    <div class="container">
+      <h2>Automação na prática: Conversor de XML (NF-e)</h2>
+      <p class="section-lead">Envie um XML de nota fiscal eletrônica e veja os principais dados e itens serem extraídos automaticamente. Depois, gere uma planilha Excel com o resumo.</p>
+
+      <div class="lab">
+        <div class="lab-panel">
+          <div class="dropzone" id="dropzone">
+            <i class="fa-solid fa-file-code"></i>
+            <p><strong>Arraste seu XML aqui</strong> ou clique para selecionar</p>
+            <p class="hint">Formato: .xml — esperado layout NF-e (versão 4.0)</p>
+            <input type="file" id="fileInput" accept=".xml"/>
+          </div>
+          <div class="lab-actions">
+            <button id="btnExemplo" class="btn btn-ghost"><i class="fa-solid fa-download"></i> Baixar XML de exemplo</button>
+            <button id="btnProcessar" class="btn" disabled><i class="fa-solid fa-gears"></i> Gerar planilha Excel</button>
+            <button id="btnBaixar" class="btn" disabled><i class="fa-solid fa-file-arrow-down"></i> Baixar planilha (Excel)</button>
+          </div>
+          <div id="labStatus" class="status" aria-live="polite"></div>
+        </div>
+        <div class="lab-preview">
+          <h3>Prévia da Nota</h3>
+          <div id="preview" class="table-wrap skeleton"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Habilidades -->
+  <section id="habilidades" class="section alt">
+    <div class="container">
+      <h2>Habilidades técnicas</h2>
+      <ul class="badges">
+        <li><i class="fa-brands fa-python"></i> Python</li>
+        <li><i class="fa-solid fa-table"></i> Excel Avançado</li>
+        <li><i class="fa-solid fa-database"></i> Pandas</li>
+        <li><i class="fa-solid fa-file-code"></i> openpyxl</li>
+        <li><i class="fa-solid fa-robot"></i> Selenium</li>
+        <li><i class="fa-solid fa-chart-pie"></i> Power BI</li>
+        <li><i class="fa-brands fa-github"></i> Git/GitHub</li>
+        <li><i class="fa-solid fa-code"></i> HTML/CSS/JS</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <div class="container">
+      <h2>Vamos conversar?</h2>
+      <p>Conte rapidamente seu desafio e eu mostro como a automação pode te ajudar.</p>
+      <div class="contact">
+        <a class="btn" href="https://wa.me/5515997110209?text=Oi%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20automa%C3%A7%C3%A3o." target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:contato.matheusfcruz@gmail.com?subject=Portf%C3%B3lio%20-%20Projeto%20de%20Automa%C3%A7%C3%A3o"><i class="fa-solid fa-envelope"></i> E-mail</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 • Portfólio profissional de Matheus Francisco Cruz</p>
+    </div>
+  </footer>
+
+  <!-- Lib Excel (Somente para a demo) -->
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.20.0/dist/xlsx.full.min.js"></script>
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+

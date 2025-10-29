@@ -1,0 +1,12 @@
+[paths]
+receitas = "data/receitas.csv"
+despesas = "data/despesas.csv"
+previsoes = "data/previsoes.csv"
+database = "finance.db"
+
+[google_sheets]
+enabled = false
+credentials_file = "credentials.json"
+receitas_range = "Receitas!A:E"
+despesas_range = "Despesas!A:E"
+previsoes_range = "Previsoes!A:D"

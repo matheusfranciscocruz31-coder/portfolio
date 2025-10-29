@@ -1,0 +1,12 @@
+﻿python-binance>=1.0.17
+pandas>=2.1
+numpy>=1.26
+ta>=0.11
+scipy>=1.11
+scikit-learn>=1.3
+httpx>=0.24
+websockets>=11.0
+pyyaml>=6.0
+loguru>=0.7
+dynaconf>=3.1
+

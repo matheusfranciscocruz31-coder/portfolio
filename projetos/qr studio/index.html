@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>QR Code Studio Web</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="shell">
+        <header class="hero">
+            <h1>QR Code Studio</h1>
+            <p>Gere ou leia QR Codes instantaneamente com uma interface leve e moderna.</p>
+        </header>
+        <section class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <h2>Gerar QR Code</h2>
+                    <p>Transforme qualquer link em um QR Code pronto para compartilhar.</p>
+                </div>
+                <form id="generator-form" class="form">
+                    <label for="generator-input">Link</label>
+                    <input type="url" id="generator-input" name="link" placeholder="https://exemplo.com/qualquer/coisa" required>
+                    <button type="submit" class="primary">Gerar</button>
+                </form>
+                <div id="generator-feedback" class="message" role="status" aria-live="polite"></div>
+                <div id="generator-result" class="result hidden">
+                    <canvas id="qr-preview" width="240" height="240" aria-label="QR Code gerado"></canvas>
+                    <div class="actions">
+                        <button id="download-btn" type="button">Baixar PNG</button>
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <h2>Ler QR Code</h2>
+                    <p>Envie uma imagem e descubra o conteúdo codificado em segundos.</p>
+                </div>
+                <form id="decoder-form" class="form" enctype="multipart/form-data">
+                    <label for="decoder-input">Imagem do QR Code</label>
+                    <input type="file" id="decoder-input" name="qr_image" accept="image/png, image/jpeg, image/webp" required>
+                    <button type="submit" class="primary">Ler</button>
+                </form>
+                <div id="decoder-feedback" class="message" role="status" aria-live="polite"></div>
+                <div id="decoder-result" class="result hidden">
+                    <div class="decoded-text" id="decoded-text"></div>
+                    <img id="decoded-preview" alt="Prévia da imagem enviada" class="decoded-image hidden">
+                </div>
+                <canvas id="decoder-canvas" class="hidden" width="400" height="400"></canvas>
+            </article>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js" integrity="sha512-fp2ryG5kyRZhQyvXmzpn8pItptL1KWNhEaClX4ozS7x+jUTdaiF1TBch4qzMpf5qFEyp7BQq26YDv4WUJgpf5g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/jsqr/dist/jsQR.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

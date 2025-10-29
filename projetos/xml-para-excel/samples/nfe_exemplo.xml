@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nfeProc xmlns="http://www.portalfiscal.inf.br/nfe" versao="4.00">
+  <NFe>
+    <infNFe Id="NFe35190300000000000000550010000001231000001230" versao="4.00">
+      <ide>
+        <cUF>35</cUF>
+        <natOp>Venda de mercadorias</natOp>
+        <mod>55</mod>
+        <serie>1</serie>
+        <nNF>123</nNF>
+        <dhEmi>2025-01-10T10:35:00-03:00</dhEmi>
+      </ide>
+      <emit>
+        <CNPJ>12345678000190</CNPJ>
+        <xNome>Empresa Exemplo LTDA</xNome>
+      </emit>
+      <dest>
+        <CNPJ>20987654000155</CNPJ>
+        <xNome>Cliente Demo SA</xNome>
+      </dest>
+      <det nItem="1">
+        <prod>
+          <cProd>P001</cProd>
+          <xProd>Pneu Aro 16</xProd>
+          <CFOP>5102</CFOP>
+          <NCM>40111000</NCM>
+          <uCom>UN</uCom>
+          <qCom>4.00</qCom>
+          <vUnCom>320.00</vUnCom>
+          <vProd>1280.00</vProd>
+        </prod>
+        <imposto>
+          <ICMS>
+            <ICMS00>
+              <orig>0</orig>
+              <CST>00</CST>
+              <vICMS>230.40</vICMS>
+            </ICMS00>
+          </ICMS>
+          <IPI>
+            <IPITrib>
+              <CST>50</CST>
+              <vIPI>64.00</vIPI>
+            </IPITrib>
+          </IPI>
+        </imposto>
+      </det>
+      <total>
+        <ICMSTot>
+          <vICMS>230.40</vICMS>
+          <vNF>1344.00</vNF>
+        </ICMSTot>
+      </total>
+      <pag>
+        <detPag>
+          <tPag>01</tPag>
+          <vPag>1344.00</vPag>
+        </detPag>
+      </pag>
+    </infNFe>
+  </NFe>
+</nfeProc>
